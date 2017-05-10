@@ -1,0 +1,23 @@
+{
+  "name": "greendots",
+  "version": "0.0.1",
+  "main": "main.js",
+  "description": "i have no idea what i'm doing",
+  "scripts": {
+    "test": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MGF1998/greendot.git"
+  },
+  "keywords": [
+    "electron",
+    "greendot"
+  ],
+  "author": "TrueMGF",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MGF1998/greendot/issues"
+  },
+  "homepage": "https://github.com/MGF1998/greendot#readme"
+}
