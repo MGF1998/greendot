@@ -1,4 +1,4 @@
-const {app,BrowserWindow} = require("electron");
+const {app,BrowserWindow,ipcMain} = require("electron");
 const path = require("path");
 const url = require("url");
 let win; 
@@ -24,5 +24,26 @@ app.on("window-all-closed", ()=>{
 app.on("activate", ()=>{ //also explicitly for apple devices
     if (win === null) {
         createWindow(800,600,"ui/index-html");
+    }
+});
+
+//'system' channel handles all communication between Renderer and Main that directly affects app or BrowserWindow(s)
+ipcMain.on("system",(arg)=>{
+    switch (arg) {
+        case "close":
+            win.close(); 
+            break;
+        case "min":
+            win.minimize();
+            break;
+        case "max":
+            if (win.isMaximized()){
+                win.unmaximize();
+            } else {
+                win.maximize();
+            }
+            break;
+        default:
+            console.log("warning: ipcMain recieved unknown async input on channel 'system': "+arg);
     }
 });
