@@ -47,7 +47,7 @@ nav {
     max-width: 400px;
     min-width: 150px;
     width:20%;
-    transition: all 1s;
+    transition: all .6s;
 }
 nav.hidden {
     max-width: 40px;
@@ -57,6 +57,7 @@ nav.hidden {
 nav #drawer {
     padding: 5px 10px;
     height: 30px;
+    text-align: right;
 }
 nav ul {
     list-style: none;
@@ -69,9 +70,6 @@ nav ul li {
 }
 nav ul li:hover{
     background-color: #444;
-}
-nav ul li span {
-    text-align:right;
 }
 #main {
     width: auto;

@@ -16,6 +16,12 @@ $("#maxwin").click(() => {
     sendAsync("system", "max");
 });
 $("#drawer").click(()=>{ 
+    if (!$("nav").hasClass("hidden")) {
+        $("nav span").fadeToggle(100);
+    } else {
+        setTimeout (()=>{
+           $("nav span").fadeToggle(100);  
+        },400);
+    }
     $("nav").toggleClass("hidden");
-    $("nav span").fadeToggle();
 });
