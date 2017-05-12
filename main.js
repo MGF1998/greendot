@@ -21,7 +21,7 @@ function createWindow(w, h, target) {
 }
 
 app.on("ready", () => {
-    createWindow(800, 600, "ui/index.html");
+    createWindow(800, 600, "ui/home.html");
 });
 app.on("window-all-closed", () => {
     if (process.platform !== "darwin") { //if it's on an Apple, it shouldn't quit - see Electron docs

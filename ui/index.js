@@ -15,3 +15,7 @@ $("#minwin").click(() => {
 $("#maxwin").click(() => {
     sendAsync("system", "max");
 });
+$("#drawer").click(()=>{ 
+    $("nav").toggleClass("hidden");
+    $("nav span").fadeToggle();
+});

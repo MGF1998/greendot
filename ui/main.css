@@ -4,9 +4,19 @@ html,body {
     font-family: "Roboto";
     margin: 0;
 }
+a {
+    color: white;
+    text-decoration: none;   
+}
+nav a {
+    color: #999;
+}
+nav a.selected {
+    color: white;
+}
 header {
     height: 40px;
-    background-color: #777;
+    background-color: #292929;
     text-align: right;
 }
 header ul {
@@ -17,8 +27,10 @@ header ul {
 header ul li {
     display: inline-block;
     width: 20px;
-    color: #999;
     text-align: center;
+}
+header ul li i {
+    color: #999;
 }
 header ul li i:hover {
     color: white;
@@ -33,11 +45,17 @@ header ul #closewin i:hover {
 nav {
     background-color: #333;
     max-width: 400px;
+    min-width: 150px;
     width:20%;
+    transition: all 1s;
+}
+nav.hidden {
+    max-width: 40px;
+    min-width: 40px;
+    width: 40px;
 }
 nav #drawer {
-    width: 100%;
-    padding: 10px 5px;
+    padding: 5px 10px;
     height: 30px;
 }
 nav ul {
@@ -51,6 +69,9 @@ nav ul li {
 }
 nav ul li:hover{
     background-color: #444;
+}
+nav ul li span {
+    text-align:right;
 }
 #main {
     width: auto;
