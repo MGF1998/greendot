@@ -5,7 +5,7 @@ html,body {
     margin: 0;
 }
 header {
-    height: 50px;
+    height: 40px;
     background-color: #777;
     text-align: right;
 }
@@ -18,16 +18,17 @@ header ul li {
     display: inline-block;
     width: 20px;
     color: #999;
+    text-align: center;
 }
 header ul li i:hover {
     color: white;
 }
-header ul .closewin i:hover {
+header ul #closewin i:hover {
     color: red;
 }
 #wrapper {
     display: flex;
-    height: 100vh;
+    height: calc(100vh - 40px);
 }
 nav {
     background-color: #333;
