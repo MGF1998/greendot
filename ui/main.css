@@ -18,6 +18,7 @@ header {
     height: 40px;
     background-color: #292929;
     text-align: right;
+    -webkit-app-region: drag;
 }
 header ul {
     list-style:none;
@@ -28,6 +29,7 @@ header ul li {
     display: inline-block;
     width: 20px;
     text-align: center;
+    -webkit-app-region: no-drag;
 }
 header ul li i {
     color: #999;
@@ -55,7 +57,7 @@ nav.hidden {
     width: 40px;
 }
 nav #drawer {
-    padding: 5px 10px;
+    padding: 10px;
     height: 30px;
     text-align: right;
 }
