@@ -1,12 +1,10 @@
-const ipcRenderer = require("electron");
-let button_closewin = document.getElementById("closewin");
-let button_minwin = document.getElementById("minwin");
-let button_maxwin = document.getElementById("maxwin");
-
+const {ipcRenderer} = require("electron");
 const sendAsync = function(channel,arg){
     ipcRenderer.send(channel,arg);
+    console.log("sending async message "+arg+" on channel "+channel);
 };
 
-button_closewin.addEventListener("click",()=>{sendAsync("system","close");});
-button_minwin.addEventListener("click",()=>{sendAsync("system","min");});
-button_maxwin.addEventListener("click",()=>{sendAsync("system","max");});
+$("#closewin").click(()=>{sendAsync("system","close");});
+$("#minwin").click(()=>{sendAsync("system","min");});
+$("#maxwin").click(()=>{sendAsync("system","max");});
+

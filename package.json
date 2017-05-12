@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/MGF1998/greendot/issues"
   },
-  "homepage": "https://github.com/MGF1998/greendot#readme"
+  "homepage": "https://github.com/MGF1998/greendot#readme",
+  "dependencies": {
+    "electron": "^1.6.7"
+  }
 }

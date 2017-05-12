@@ -36,8 +36,8 @@ nav {
 }
 nav #drawer {
     width: 100%;
+    padding: 10px 5px;
     height: 30px;
-    text-align: right;
 }
 nav ul {
     list-style: none;

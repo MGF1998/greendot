@@ -3,6 +3,7 @@ const path = require("path");
 const url = require("url");
 let win; 
 
+
 function createWindow(w,h,target) {
     win = new BrowserWindow({width: w, height: h, frame: true});
     win.loadURL(url.format({
@@ -29,6 +30,7 @@ app.on("activate", ()=>{ //also explicitly for apple devices
 
 //'system' channel handles all communication between Renderer and Main that directly affects app or BrowserWindow(s)
 ipcMain.on("system",(arg)=>{
+    console.log("channel system recieved message "+arg);
     switch (arg) {
         case "close":
             win.close(); 
