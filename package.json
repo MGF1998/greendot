@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/MGF1998/greendot#readme",
   "dependencies": {
-    "electron": "^1.6.7"
+    "electron": "^1.6.7",
+    "jquery": "^3.2.1"
   }
 }
