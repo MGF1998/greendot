@@ -1,7 +1,5 @@
 const $ = require("jquery");
-const {
-    ipcRenderer
-} = require("electron");
+const {ipcRenderer} = require("electron");
 const sendAsync = function (channel, arg) {
     ipcRenderer.send(channel, arg);
     console.log("sending async message " + arg + " on channel " + channel);
