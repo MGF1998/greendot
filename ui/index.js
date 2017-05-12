@@ -1,4 +1,4 @@
-const $ = require("jquery");
+const $ = require("jQuery");
 const {ipcRenderer} = require("electron");
 const sendAsync = function (channel, arg) {
     ipcRenderer.send(channel, arg);
