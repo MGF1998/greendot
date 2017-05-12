@@ -43,6 +43,7 @@ nav ul {
     list-style: none;
     font-weight: 500;
     font-size: 1.1em;
+    padding: 10px;
 }
 nav ul li {
     height: 30px;
